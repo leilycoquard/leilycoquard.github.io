@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leïly Coquard Portfolio website</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/leilylogo.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/81e3392653.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/name.png" alt="">
+        </div>
+    <!--   
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+    -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Accueil</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">Mes projets</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">À propos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#work" class="nav__link">Mes réalisations</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hello, c'est <strong>Leïly Coquard</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Votre future stagiaire ?</p>
+        <img src="img/profile.jpg" alt="une image de moi-même" class="intro__img">
+    </section>
+
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">Mes domaines de compétence</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Développement web et UX/UI</h3>
+                <p>J'ai toujours un peu touché au HTML et CSS, mais je m'y suis mise plus sérieusement depuis ma rentrée à MMI dans le but d'apprendre par la suite le js, ainsi que l'ux et ui design. Pourquoi pas le back, mais j'y vais pas à pas !
+                    Pour rentrer à MMI, j'ai codé un site regroupant mes travaux, que vous pouvez retrouver <a href="https://leinerstine.github.io/" target="_blank">ici</a>.
+                </p>
+            </div>
+            <div class="service">
+                <h3>Programmation orientée objet</h3>
+                <p>J'ai découvert l'informatique via le C et le C++ où j'ai notamment codé un robot avec un ami, avant de continuer avec le Python à la fac de mathématiques et informatique. J'ai également commencé à apprendre le C#.</p>
+            </div>
+            <div class="service">
+                <h3>Illustrations</h3>
+                <p>À mes heures perdues, j'essaie parfois de faire des graphismes et des créations via illustrator et clip studio paint ex.</p>
+            </div>
+        </div>
+
+        <a href="#work" class="btn">Mes projets</a>
+    </section>
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Qui suis-je</h2>
+        <p class="section__subtitle section__subtitle--about">Étudiante en première année de MMI Bordeaux</p>
+
+        <div class="about-me__body">
+            <p>Après un bac S mention Très Bien en option informatique, je me suis dirigée vers une licence Mathématiques et Informatique, que j'ai quitté au bout de deux ans après avoir fait de la programmation C, du Python, de l'algorithmie des tableaux entre autres.
+                Le but de la formation étant de nous professionnaliser, nous devons faire des stages dès la première année dans notre domaine d'intérêt, pour ma part le développement web et l'ux/ui design.
+                Nous n'avons pas encore eu d'atelier sur ces thèmes, mais je suis assez curieuse donc j'apprends en autodidacte, avec des tutoriels sur youtube ou toute autre plateforme disponible.
+            </p>
+            <p>En dehors des cours, j'aime courir les matins sur les quais avec de la musique dans les oreilles, jouer un peu de violoncelle, regarder des séries (je me reregarde Brooklyn Nine Nine et Good Omens), sortir boire un verre (bière blanche et vin blanc), ou manger une crêpe. 
+                Si vous organisez une soirée, je ramènerai de la sangria sans faute, et pourquoi pas même du saucisson.
+            </p>
+        </div>
+
+        <img src="img/profile2.jpg" alt="trombinoscope" class="about-me__img">
+    </section>
+
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">Mes réalisations</h2>
+        <p class="section__subtitle section__subtitle--work">Une petite sélection</p>
+
+        <div class="portfolio">
+            <item href="#" class="portfolio__item">
+                <img src="img/safi.jpg" alt="" class="portfolio__img">
+            </item>
+            <item class="portfolio__item">
+                <video src="mp4/background.mp4" autoplay loop playsinline muted class="portfolio__img"></video>
+            </item>
+            <a href="https://github.com/Leinerstine/Robocup_2019" target ="_blank" class="portfolio__item tooltip">
+                <span class="tooltiptext">Lien vers Github</span>
+                <img src="img/robobo.JPG" alt="" class="portfolio__img">
+            </a>
+            <item class="portfolio__item">
+                <img src="img/dehors.jpg" alt="" class="portfolio__img">
+            </item>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a href="mailto:leilycoquard@gmail.com" class="footer__link">leilycoquard@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.facebook.com/leily.coquard/"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/leilycoquard/"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/le%C3%AFly-coquard-83a0b4223/"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/Leinerstine/"><i class="fab fa-github"></i></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
